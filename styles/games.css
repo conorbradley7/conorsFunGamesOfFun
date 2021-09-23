@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+@viewport{width: device-width}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*
+========================================================================================================================
+Header
+========================================================================================================================
+*/
+
+header{
+    font-size: 1em;
+    text-align: center;
+    padding: 2em;
+    background-color: #011936;
+    color: white;
+    border-bottom: solid 1.4em #F6AE2D;
+}
+
+/*
+========================================================================================================================
+nav
+========================================================================================================================
+*/
+
+nav{
+    background-color: #F6AE2D;
+    width:100%;
+    padding: 0.8em;
+}
+
+ nav a{
+     color: black;
+     background-color: white;
+     border-radius: 1em;
+     padding: 0.5em;
+     text-decoration: none;
+}
+
+nav a:hover{
+  background-color: black;
+  color:white;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0.2em 0;
+}
+
+.header_with_nav{
+    border: none;
+}
+
+
+/*
+========================================================================================================================
+Main
+========================================================================================================================
+*/
+
+main{
+    margin: 2em;
+}
+
+main h1{
+    font-size: 2em;
+    padding: 1em;
+}
+
+p{
+    margin-left: 2em;
+    font-size: 0.7em;
+}
+
+ul{
+    margin: 0 0 2em 2em;
+    list-style: none;
+
+}
+
+/*
+========================================================================================================================
+Login/Register
+========================================================================================================================
+*/
+
+#login_reg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2em;
+    width: 30%;
+    background-color: #CBF3F0;
+}
+
+#login_reg h1{
+    text-align: center;
+    margin: 0 0 2em 0;
+    padding: 0.7em 0 0 0;
+    border-bottom: solid 0.1em black;
+}
+
+form{
+    padding: 1em 3em 0 1em;
+}
+
+input[type="text"], input[type="password"]{
+    margin: 0 0 0.8em 0.8em;
+    font-size: 0.7em;
+    width: 8em;
+    height: 20px;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type="submit"]{
+    margin-bottom: 2em;
+    margin-left: 2em;
+    width: 5em;
+    height: 2em;
+}
+
+input[type="text"]:focus, input[type="password"]:focus{
+    width: 100%;
+}
+
+main img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 1.5s;
+    padding-bottom: 2em;
+    width: 250px;
+    height: 250px;
+}
+
+img:hover{
+  transform: scale(1.1);
+}
+
+form ~ img ~ p{
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+form + p{
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+
+
+/*
+========================================================================================================================
+Games
+========================================================================================================================
+*/
+
+canvas{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  border: 2px solid black;
+}
+
+#startBtn{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+
+#space_invaders canvas{
+    border: 2px solid yellow;
+    background-image: url('../media/space_background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#chicken_run canvas{
+  background-image: url('../media/chicken_run_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#space_invaders{
+    margin: 0;
+    color: white;
+    background-image: url('../media/space_inv_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#chicken_run{
+  background-image: url('../media/chicken_run_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*
+========================================================================================================================
+Home
+========================================================================================================================
+*/
+
+#game_gallery{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+#game_gallery video{
+    width: 400px;
+    height: 400px;
+    border-radius: 1em;
+}
+
+#game_gallery a{
+  color: white;
+  background-color: black;
+  border-radius: 1em;
+  margin:2em;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+
+/*
+========================================================================================================================
+Game Over
+========================================================================================================================
+*/
+
+#game_over p {
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+}
